@@ -29,7 +29,7 @@ footer {
     padding: 20px;
     border-radius: 10px;
     display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-columns: repeat(1fr,3);
     box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.495);
     padding: 15px;
 }
