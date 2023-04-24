@@ -56,3 +56,10 @@ p {
     padding-bottom: 50px;
     margin-bottom: 0px;
 }
+.copy{
+    grid-column: 1/4;
+}
+#updated {
+    grid-row: 2;
+    grid-column: 1/4;
+}
