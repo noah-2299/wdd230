@@ -15,7 +15,8 @@ window.onload = function() {
 
   
     let fullDateString = "Last Updated: " + day + ", " + month + "/" + date.getDate() + "/" + year + " at " + date.getHours() + ":" + date.getMinutes() + " EDT";
-    let element = document.getElementById("updated");
+    let element = document.getElementById("lastModified");
     element.innerHTML = fullDateString;
+    
   };
 

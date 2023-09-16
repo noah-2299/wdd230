@@ -3,22 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noah Smith WDD230 Portal</title>
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/script.js"></script>
+    <meta name="description" content="Noah Smith WDD 230 - Web Frontend Development Course assignment portal">
+    <!-- review this meta desc to meet standard and include the needed content -->
+    <meta name="author" content="Noah Smith">
+    <title>Noah Smith - WDD230 - Web Frontend Devolopement</title>
+    <link rel="stylesheet" href="styles/base.css">
+    
+    <script src="scripts/getdates.js"></script>
 </head>
 <body>
     <header>
         <img src="images/noah.jpg" alt = "Portrait photograph of Noah Smith Smiling">
-        <h1>Noah C. Smith</h1>
+        <h1>Noah Smith</h1>
     </header>
+    <nav>
+        <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="chamber/siteplan.html">Site Plan</a></li>
+        <li><a href="chamber/">Chamber</a></li>
+        <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Scripture</a></li>
+
+    </nav>
     <main>
-        <h2 class="heading">
-            WDD 230: Assignment Portal
+        <h2 class="title">
+            WDD 230: Web Frontend Development
         </h2>
-        <div>
+        <section class="card">
+            <h3>Learning Activities</h3>
             <ul class="week_list">
+                <li>Lesson 01: <a href="lesson01/holygrail.html">Holy Grail</a></li>
                 <li>Lesson 02: <a href="#">Title</a></li>
                 <li>Lesson 03: <a href="#">Title</a></li>
                 <li>Lesson 04: <a href="#">Title</a></li>
@@ -30,16 +44,22 @@
                 <li>Lesson 10: <a href="#">Title</a></li>
                 <li>Lesson 11: <a href="#">Title</a></li>
                 <li>Lesson 12: <a href="#">Title</a></li>
-                
             </ul>
-            <p>Some Lessons may need more than one activity/assignment link.</p>
-        </div>
+        </section>
+        <section class="card">
+            <h3>Information</h3>
+            <ul>
+            <li id="weather">weather</>
+            <li id="visitCount">Page Visits:</>
+            </ul>
+        </section>
     </main>
     <footer>
         <p class="copy">
-            &copy; 2023 || Noah C. Smith || Virginia
+            &copy; 2023 || Noah C. Smith || Virginia, USA 
         </p>
-        <p id="updated"></p>
+        <p id="lastModified"></p>
     </footer>
 </body>
+<script src="scripts/getdates.js"></script>
 </html>

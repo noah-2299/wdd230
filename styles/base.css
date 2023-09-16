@@ -1,0 +1,84 @@
+body {
+    
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    margin: 0;
+    
+}
+header{
+    background-color: #0E365D;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+}
+h1{
+    align-self: center;
+    margin: 1%;
+}
+header img{
+    width: 100%;
+    max-width: 10vw;
+    height: auto;
+    margin: 1%;
+}
+nav{
+   background-color: black;
+    text-align: center;
+    color: white;
+    padding: 5px;
+ 
+}
+ul{
+    list-style: none;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding-left: 3%;
+    
+}
+
+li{
+    margin: 15px;
+}
+
+h3 {
+    text-align: center;
+    background-color: #0E365D;
+    margin: 0px;
+    border-top-right-radius: 5px ;
+    border-top-left-radius: ;
+
+    
+}
+.card{
+    margin: 15px;
+}
+.card ul {
+    border-style: solid;
+    border-width: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-RIGHT-radius: 5px;
+    justify-content: left;
+    margin: 0%;
+}
+
+.title {
+    margin: 20px;
+    border-bottom: 2px black solid;
+    text-align: center;
+}
+
+
+footer {
+    background-color: #0E365D;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    display: flex;
+
+}
+p{
+    margin-right: 1%;
+}
