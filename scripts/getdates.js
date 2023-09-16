@@ -17,6 +17,10 @@ window.onload = function() {
     let fullDateString = "Last Updated: " + day + ", " + month + "/" + date.getDate() + "/" + year + " at " + date.getHours() + ":" + date.getMinutes() + " EDT";
     let element = document.getElementById("lastModified");
     element.innerHTML = fullDateString;
+
+    let copySting = ` &copy ${year} || Noah C. Smith || Virginia, USA`;
+    let element2 = document.getElementById('copy')
+    element2.innerHTML = copySting;
     
   };
 
