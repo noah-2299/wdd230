@@ -2,7 +2,7 @@ main{
     width: 95%;
     margin: auto;
     display: grid;
-    grid-column: 100%;
+    grid-column: 1fr;
 }
 
 body {
@@ -34,7 +34,7 @@ nav{
     color: white;
     padding: 5px;
     display: grid;
-    grid-column: 100%;
+    grid-column: 1fr;
  
 }
 ul{
