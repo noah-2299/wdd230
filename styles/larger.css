@@ -1,0 +1,13 @@
+@media (min-width:640px) {
+    nav {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+    h2{
+        grid-column: 1/3;
+    }
+
+}

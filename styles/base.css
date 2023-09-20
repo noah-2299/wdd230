@@ -33,8 +33,9 @@ nav{
     text-align: center;
     color: white;
     padding: 5px;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
+
  
 }
 ul{
@@ -44,6 +45,7 @@ nav a{
     color: white;
     text-decoration: none;
     padding: 1%;
+    flex: 1 1 100%
 }
 
 li{
@@ -91,3 +93,4 @@ footer {
 p{
     margin-right: 1%;
 }
+
