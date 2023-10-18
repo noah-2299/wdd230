@@ -49,45 +49,113 @@ nav a{
     margin-right: 5%;
     margin-top: 1%;
     margin-bottom: 1%;
-    background-color: var(--primary-color);
-    border: solid black 1px;
+    background-color: var(--highlight-color);
+    border-bottom: solid black 1px;
+    border-radius: 5px;
     color: black;
     text-decoration: none;
     box-shadow:var(--teriary-color) inset 10px;
+    transition: 0.4s;
+}
+
+nav a:hover{
+    margin-bottom: 5px;
 }
 
 main{
-    width: 95%;
+    width: clamp(300px,95%,2160px);
     margin: auto;
     display: grid;
-    grid-column: 1fr;
+    grid-column: var(--six-grid);
 }
-p {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+section{
+    border: black solid 1px;
+    /* background-color: var(--secondary-color); */
+    margin: .5em;
 }
-#hero{
-    width: 100%;
+
+.hero{
+    grid-column: 1/6;
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: var(--six-grid);
 }
-.call-to-action button{
+
+#hero-img{
+    grid-column: 1/4;
+    width: clamp(300px,2160px,100%);
+    margin: auto;
+    grid-row: 1/6;
+
+}
+.call-to-action{
     background-color: var(--highlight-color);
     border: solid var(--primary-color);
     border-radius: 10px;
     transition-duration: 0.4s;
     padding-top: 5px;
     padding-bottom: 5px;
+    grid-row: 3;
+    grid-column: 2;
+    width: 6em;
+    height: 3em;
     
 }
-.call-to-action button:hover{
+.call-to-action:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-bottom: 5px;
 
 }
 .call-to-action a{
     color: black;
     text-decoration: none;
 }
-.hero-image{
-    grid-column: 1;x
+
+.current-events{
+    text-align: center;
+    grid-row: 2;
+    background-color: var(--teriary-color);
+    grid-column: 1/2;
+    width: clamp(300px,1000px,100%)
+}
+.current-events li{
+    background-color: var(--secondary-color);
+    list-style: none;
+    padding: 1%;
+    margin-bottom: 2%;
+    margin-right: 5%;
+    border: dashed var(--primary-color);
+}
+.weather{
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    text-align: center;
+    grid-column: 2;
+    background-color: var(--teriary-color);
+    width: clamp(1vw,);
+}
+.weather h2{
+    grid-column: 1/3;
+    
+}
+.weather-lables p{
+    margin: 0px;
+}
+.spotlight{
+    grid-row: 3;
+    grid-column: 1/6;
+    background-color: var(--teriary-color);
+}
+#temp::after{
+    content: ' °F';
+}
+footer{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    border-top: black solid 5px;
 }
 
