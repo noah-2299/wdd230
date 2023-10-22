@@ -53,7 +53,6 @@ main{
     width: clamp(300px,95%,2160px);
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(1fr,6);
 }
 section{
     /* border: black solid 1px; */
@@ -120,7 +119,6 @@ section{
     text-align: center;
     grid-column: 2;
     background-color: var(--teriary-color);
-    width: clamp(1vw,);
 }
 .weather h2{
     grid-column: 1/3;
