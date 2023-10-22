@@ -8,29 +8,17 @@
 }
 header{
     background-color: var(--primary-color);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 header img{
-    padding-left: 20%;
     max-width: 70px;
     max-height: 70px;
-    position: relative;
-    top: 20%;
+    margin-left: 2%;
 
 }
-header h1{
-    grid-row: 1;
-    grid-column: 2;
-    margin-bottom: 0px;
-    align-self: center;
-    justify-self: center;
-}
-header h4{
-    grid-column: 2;
-    grid-row: 2;
-    margin-top: 0;
-    align-self: center;
+.title{
     justify-self: center;
 }
 
@@ -38,7 +26,7 @@ nav{
     position: sticky;
     top: 1px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-content: center;
     background-color: var(--highlight-color);
 }
@@ -69,7 +57,7 @@ main{
     grid-column: var(--six-grid);
 }
 section{
-    border: black solid 1px;
+    /* border: black solid 1px; */
     /* background-color: var(--secondary-color); */
     margin: .5em;
 }
@@ -80,13 +68,17 @@ section{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: var(--six-grid);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 #hero-img{
-    grid-column: 1/4;
+    grid-column: 1/5;
     width: clamp(300px,2160px,100%);
     margin: auto;
     grid-row: 1/6;
+    
 
 }
 .call-to-action{
@@ -159,3 +151,26 @@ footer{
     border-top: black solid 5px;
 }
 
+
+
+.hamburger-button button{
+    background-color: var(--primary-color);
+    width: 100px;
+    height: 120px;
+    font-size: 3rem;
+    
+}
+
+.active{
+    display: none;
+}
+.inactive{
+    
+    
+}
+@media (min-width:500px) {
+    #hamburger-button button{
+        display: none;
+        
+    }
+}
