@@ -42,7 +42,6 @@ nav a{
     border-radius: 5px;
     color: black;
     text-decoration: none;
-    box-shadow:var(--teriary-color) inset 10px;
     transition: 0.4s;
 }
 
@@ -54,7 +53,7 @@ main{
     width: clamp(300px,95%,2160px);
     margin: auto;
     display: grid;
-    grid-column: var(--six-grid);
+    grid-template-columns: var(--six-grid);
 }
 section{
     /* border: black solid 1px; */
@@ -65,20 +64,17 @@ section{
 .hero{
     grid-column: 1/6;
     margin-top: 0px;
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: var(--six-grid);
     justify-content: center;
-    align-content: center;
     align-items: center;
 }
 
-#hero-img{
-    grid-column: 1/5;
+#hero-img img{
     width: clamp(300px,2160px,100%);
+    position: relative;
     margin: auto;
-    grid-row: 1/6;
-    
 
 }
 .call-to-action{
@@ -88,10 +84,9 @@ section{
     transition-duration: 0.4s;
     padding-top: 5px;
     padding-bottom: 5px;
-    grid-row: 3;
-    grid-column: 2;
     width: 6em;
     height: 3em;
+    position: absolute;
     
 }
 .call-to-action:hover{
