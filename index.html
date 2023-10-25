@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
     <header>
@@ -41,27 +41,47 @@
         </h2>
         <section class="card">
             <h3>Learning Activities</h3>
-            <ul class="week_list">
-                <li>Lesson 01: <a href="lesson01/holygrail.html">Holy Grail</a></li>
-                <li>Lesson 02: <a href="lesson02/design.html">Title</a></li>
-                <li>Lesson 03: <a href="#">Title</a></li>
-                <li>Lesson 04: <a href="https://codepen.io/noah-2299/pen/YzdRGWG">CodePen</a></li>
-                <li>Lesson 05: <a href="lesson05/bom.html">BOM site</a></li>
-                <li>Lesson 06: <a href="lesson06/images/landscape.webp">WebP </a><span>,</span><a href="lesson06/responsive-images.html"> Responsive Image Site</a></li>
-                <li>Lesson 07: <a href="#">Title</a></li>
-                <li>Lesson 08: <a href="#">Title</a></li>
-                <li>Lesson 09: <a href="#">Title</a></li>
-                <li>Lesson 10: <a href="#">Title</a></li>
-                <li>Lesson 11: <a href="#">Title</a></li>
-                <li>Lesson 12: <a href="#">Title</a></li>
-            </ul>
+            <div class="card-body">
+                <ul class="week_list">
+                    <li>Lesson 01: <a href="lesson01/holygrail.html">Holy Grail</a></li>
+                    <li>Lesson 02: <a href="lesson02/design.html">Title</a></li>
+                    <li>Lesson 03: <a href="#">Title</a></li>
+                    <li>Lesson 04: <a href="https://codepen.io/noah-2299/pen/YzdRGWG">CodePen</a></li>
+                    <li>Lesson 05: <a href="lesson05/bom.html">BOM site</a></li>
+                    <li>Lesson 06: <a href="lesson06/images/landscape.webp">WebP </a><span>,</span><a href="lesson06/responsive-images.html"> Responsive Image Site</a></li>
+                    <li>Lesson 07: <a href="#">Title</a></li>
+                    <li>Lesson 08: <a href="#">Title</a></li>
+                    <li>Lesson 09: <a href="#">Title</a></li>
+                    <li>Lesson 10: <a href="#">Title</a></li>
+                    <li>Lesson 11: <a href="#">Title</a></li>
+                    <li>Lesson 12: <a href="#">Title</a></li>
+                </ul>
+            </div>
         </section>
         <section class="card">
-            <h3>Information</h3>
-            <ul>
-            <li id="weather"> Weather</li>
-            <li id="visitCount">Page Visits:</li>
-            </ul>
+            <h3>Weather</h3>
+            <div class="card-body">
+                <ul>
+                <li id="temp"></li>
+                <li><img id="weather-img"></li>
+                <li id="humidity"></li>
+                <li id="wind-chill"></li>
+                </ul>
+            </div>
+        </section>
+        <section class="card">
+            <h3>Page Visits</h3>
+            <div class="card-body">
+                <ul>
+                    <li id="page-visits">
+    
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="card">
+            <h3>Map</h3>
+            <div class="card-body"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49492.792519008035!2d-78.21004141352006!3d39.167910792236285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b5eef740674ac1%3A0x91b50a0f9c168184!2sWinchester%2C%20VA%2022601!5e0!3m2!1sen!2sus!4v1698166178599!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         </section>
     </main>
     <footer>
@@ -70,6 +90,7 @@
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>
