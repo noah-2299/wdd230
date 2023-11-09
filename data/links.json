@@ -1,0 +1,98 @@
+{
+    "lessons" : [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "lesson01/holygrail.html",
+                    "title": "Holy Grail Page"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "lesson02/design.html",
+                    "title": "Design Page"
+                },
+                {
+                    "url": "relative_address_2",
+                    "title": "Learning Activity 2"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "url": "https://codepen.io/noah-2299/pen/YzdRGWG",
+                    "title": "CodePen Activity"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "lesson05/bom.html",
+                    "title": "Book Of Mormon Scripture Saver"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "lesson06/images/landscape.webp",
+                    "title": "WebP Image"
+                },
+                {
+                    "url": "lesson06/responsive-images.html",
+                    "title": "Responsive Images Site"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "lesson07/index.html",
+                    "title": "Title"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "lesson08/index.html",
+                    "title": "Title"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url": "lesson09/prophets.html",
+                    "title": "Modern day Prophet Gallery"
+                }
+            ]
+        },
+        {
+            "lesson": "10",
+            "links": [
+                {
+                    "url": "lesson10/index.html",
+                    "title": "Title"
+                }
+            ]
+        }
+    ]
+}

@@ -3,13 +3,34 @@
 #cards{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    
+}
+
+section{
+    border: 1px black solid;
+    margin: 3%;
+    padding: 3%;
+}
+section img {
+    box-shadow: 10px 5px 5px black ;
+}
+section img:hover{
+    scale: 1.01;
+    transition: 0.7s;
+}
+
+h1{
+    color: #190525;
 }
 h2 {
-    color: rgb(0, 231, 69);
+    color: #190525;
+    text-decoration: underline;
 }
 p{
-    color: rgb(0, 231, 69);
+    color: rgb(183, 183, 183);
+    font-family: Arial, Helvetica, sans-serif;
 }
 body {
-    background-color:rgb(3, 73, 1) ;
+    background-color:rgb(3, 73, 1);
+    text-align: center;
 }
