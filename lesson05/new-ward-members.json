@@ -1,0 +1,15 @@
+{
+  "familyName": "Smith",
+  "moveInDate": "2020-03-03",
+  "numberofRecords": 3,
+  "bishopVisted": true,
+  "members": [
+    { "name": "joe", "gender": "male", "birthday": "" },
+    {
+      "name": "jane",
+      "gender": "female",
+      "birthday": ""
+    },
+    { "name": "lily", "gender": "female", "birthday": "" }
+  ]
+}

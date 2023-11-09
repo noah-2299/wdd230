@@ -1,0 +1,15 @@
+
+
+#cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+h2 {
+    color: rgb(0, 231, 69);
+}
+p{
+    color: rgb(0, 231, 69);
+}
+body {
+    background-color:rgb(3, 73, 1) ;
+}
