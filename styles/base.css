@@ -74,6 +74,9 @@ h3 {
     border-bottom-RIGHT-radius: 15px;
     justify-content: left;
     margin: 0%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 .title {
@@ -126,4 +129,7 @@ p{
     display: flex;
     flex-wrap: wrap;
 }
-
+table{
+    
+    text-align: center;
+}
