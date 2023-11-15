@@ -130,6 +130,10 @@ p{
     flex-wrap: wrap;
 }
 table{
-    
+    width: 100%;
+    height: auto;
     text-align: center;
+}
+#weather-img{
+    width: 7rem;
 }

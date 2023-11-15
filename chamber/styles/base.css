@@ -7,9 +7,12 @@
 }
 
 
-body{
+
+
+body {
     background-color: var(--teriary-color);
 }
+
 header {
     background-color: var(--primary-color);
     display: flex;
@@ -33,26 +36,33 @@ main {
     margin: auto;
     display: grid;
     background-color: var(--secondary-color);
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
-.discover{
+
+.discover {
+    grid-column: 1/4;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.image-gallery img{
+
+.image-gallery img {
     width: 200;
-    max-width: 95%;
+    max-width: 100%;
+    height: auto;
 }
+
 section {
     /* border: black solid 1px; */
-    /* background-color: var(--secondary-color); */
-    margin: .5em;
+    background-color: var(--teriary-color);
+    margin: 1em;
+    border: solid var(--primary-color);
+        border-radius: 20px;
 }
+
 .hero {
-    grid-column: 1/6;
-    margin-top: 0px;  
+    grid-column: 1/4;
+    margin-top: 0px;
     display: flex;
-    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
 }
@@ -63,16 +73,13 @@ section {
     margin: auto;
 
 }
+
 .call-to-action:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 5px;
 
 }
 
-.call-to-action a {
-    color: black;
-    text-decoration: none;
-}
 #temp::after {
     content: ' °F';
 }
@@ -89,7 +96,9 @@ footer {
 .active {
     display: none;
 }
+
 .call-to-action {
+    text-align: center;
     background-color: var(--highlight-color);
     border: solid var(--primary-color);
     border-radius: 10px;
@@ -97,29 +106,37 @@ footer {
     padding-top: 5px;
     padding-bottom: 5px;
     width: 6em;
-    height: 3em;
+    height: 1em;
     position: absolute;
+    color: black;
+    text-decoration: none;
 
 }
 
+
 @media screen and (max-width:499px) {
-    
-    main{
+
+    main {
         grid-template-columns: 1fr;
     }
-    .current-events{
+
+    .current-events {
         grid-row: 3;
     }
-    .spotlight{
+
+    .spotlight {
         grid-row: 4;
     }
-    .weather{
+
+    .weather {
         grid-row: 5;
     }
-    .discover{
+
+    .discover {
         display: grid;
         grid-template-columns: 1fr;
     }
+
     nav a {
         display: block;
         width: 100%;
@@ -134,12 +151,12 @@ footer {
         padding: 1%;
     }
 
-    .hamburger-button button{
+    .hamburger-button button {
         background-color: var(--primary-color);
         width: 5rem;
         height: 100%;
         font-size: 3rem;
-    } 
+    }
 
     nav {
         display: flex;
@@ -148,6 +165,7 @@ footer {
         background-color: var(--secondary-color);
         flex-wrap: wrap;
     }
+
     form {
         background-color: var(--secondary-color);
     }

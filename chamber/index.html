@@ -41,7 +41,7 @@
                 <img src="images/hero_small.webp" alt="people smiling in a meeting" width="720" height="360">
             </picture>
             <!--<img id="hero-img" src="images/hero.jpg">-->
-            <button class="call-to-action"><a href="join.html">Join Now!</a></button>
+            <a class="call-to-action" href="join.html">Join Now!</a>
         </div>
         <section class="current-events">
             <h2>Events</h2>
@@ -55,14 +55,23 @@
         <section class="weather">
             <h2>Weather</h2>
             <div class="weather-labels">
-                <img id="weather-img" src="images/not_found.webp" alt="current weather icon image">
-                <p>Humidity:</p>
-                <p>Wind Chil:</p>
-            </div>
-            <div class="weather-values">
-                <p id="temp">33&deg;C</p>
-                <p id="humidity">35%</p>
-                <p id="wind-chill">N/A</p>
+                <table>
+                    <tr>
+                        <td colspan="2"><img id="weather-img" src="images/not_found.webp" alt="current weather icon image"></td>
+                    </tr>
+                    <tr>
+                        <td><p>Temperature: </p></td>
+                        <td><p id="temp">33&deg;C</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>Humidity: </p></td>
+                        <td><p id="humidity">35%</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>Wind Chill: </p></td>
+                        <td><p id="wind-chill">N/A</p></td>
+                    </tr>
+                </table>
             </div>
         </section>
         <section class="spotlight">
