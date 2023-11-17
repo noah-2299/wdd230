@@ -34,51 +34,160 @@
         <a href="join.html">Join</a>
     </nav>
     <main>
-        <form method="get" action="thankyou.html">
-            <fieldset>
-                <legend>
-                    Applicant Info
-                </legend>
-                <label>First Name * <input type="text" name="fname" id="fname" required></input></label>
-                <label>Last Name * <input type="text" name="lname" id="lname" required></input></label>
-                <label>Title/Position <input type="text" name="title" id="title"></input></label>
-                <label>Email Address * <input type="email" name="email" id="email" required placeholder="sample@example.com"></input></label>
-                <label>Mobile Phone #  *<input type="tel" name="phone" id="phone" required></input></label>
-                <label>Organization/Company<input type="text" name="orgname" id="orgname" required></input></label>
+        
+        <section>
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>
+                        Applicant Info
+                    </legend>
+                    <label>First Name * <input type="text" name="fname" id="fname" required></input></label>
+                    <label>Last Name * <input type="text" name="lname" id="lname" required></input></label>
+                    <label>Title/Position <input type="text" name="title" id="title"></input></label>
+                    <label>Email Address * <input type="email" name="email" id="email" required placeholder="sample@example.com"></input></label>
+                    <label>Mobile Phone #  *<input type="tel" name="phone" id="phone" required></input></label>
+                    <label>Organization/Company<input type="text" name="orgname" id="orgname" required></input></label>
+                    
+                    <fieldset>
+                        <legend>Membership</legend>
+                        <label> Level
+                            <select>
+                                <option value="">
+                                    SELECT 
+                                </option>
+                                <option value="NP Membership">
+                                    NP Membership(Only Non-profit)
+                                </option>
+                                <option value="Bronze Membership">
+                                    Bronze Membership
+                                </option>
+                                <option value="Silver Membership">
+                                    Silver Membership
+                                </option>
+                                <option value="Gold Membership">
+                                    Gold Membership
+                                </option>
+                            
+                            </select>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Description</legend>
+                        <label>Please provide a short description of your Organization <textarea type="textarea" cols="100" rows="10" name="description" id="description"></textarea></label>
+                        <label><input type="hidden" name="timestamp" id="timestamp" value="datetime.now()"></label>
+                    </fieldset>
+                </fieldset>
                 
-                <fieldset>
-                    <legend>Membership</legend>
-                    <label> Level
-                        <select>
-                            <option value="">
-                                SELECT 
-                            </option>
-                            <option value="NP Membership">
-                                NP Membership(Only Non-profit)
-                            </option>
-                            <option value="Bronze Membership">
-                                Bronze Membership
-                            </option>
-                            <option value="Silver Membership">
-                                Silver Membership
-                            </option>
-                            <option value="Gold Membership">
-                                Gold Membership
-                            </option>
-                        
-                        </select>
-                    </label>
-                </fieldset>
-                <fieldset>
-                    <legend>Description</legend>
-                    <label>Please provide a short description of your Organization <textarea type="textarea" cols="100" rows="10" name="description" id="description"></textarea></label>
-                    <label><input type="hidden" name="timestamp" id="timestamp" value="datetime.now()"></label>
-                </fieldset>
-            </fieldset>
-            
-            <label><button type="submit" name="apply" id="apply">Join</label>
-            
-        </form>
+                <label><button type="submit" name="apply" id="apply">Join</button></label>
+                
+            </form>
+        </section>
+        <section class="membership">
+            <table>
+                <h2>Membership Tiers</h2>
+                <tr>
+                    <th>Teir </th> <th>Description</th> <th>Pricing</th>
+                </tr>
+                <tr>
+                    <td> NP</td>
+                    <td>
+                        <ul>
+                            <li>Exclusive Non-profit Networking Events: Attend specialized networking events tailored for non-profit organizations to connect with like-minded peers and potential collaborators.</li>
+                            <li>Training and Development Workshops: Access to exclusive workshops and training sessions designed to enhance the skills and capabilities of non-profit professionals.</li>
+                            <li>Featured on Non-profit Directory: Gain visibility through inclusion in the chamber's non-profit directory, showcasing your organization to the local business community.</li>
+                            <li>Access to Resource Library: Enjoy free access to a library of resources including articles, guides, and templates specifically curated for non-profit success.</li>
+                            <li>Promotional Opportunities: Receive special consideration for promotional opportunities within the chamber's communications, including newsletters and social media.</li>
+                        </ul>
+                    </td>
+                        <td>FREE</td>
+                </tr>
+                <tr>
+                    <td> Bronze </td>
+                    <td>
+                        <ul>
+                            <li>
+                                Standard Networking Events: Attend regular networking events to connect with local businesses and professionals.
+        
+                            </li>
+                            <li>
+                                Business Training Seminars: Participate in business training seminars covering a range of topics to enhance your organizational skills and business acumen.
+                                
+                            </li>
+                            <li>
+                                Online Business Directory Listing: Secure a spot in the online chamber directory, boosting your visibility among potential clients and partners.
+                                
+                            </li>
+                            <li>
+                                Event Discounts: Enjoy exclusive discounts on chamber-hosted events, workshops, and seminars, providing cost-effective opportunities for professional development.
+                                
+                            </li>
+                            <li>
+                                Spotlight Position on Home Page: Benefit from a rotating spotlight position on the chamber's homepage, increasing visibility for your business.
+                                
+                            </li>
+                        </ul>
+                    </td>
+                    <td>$250/year</td>
+                </tr>
+                <tr>
+                    <td> Silver </td>
+                    <td>
+                        <ul>
+                            <li>
+                                Premium Networking Events: Gain access to premium networking events with key industry leaders and decision-makers.
+        
+                            </li>
+                            <li>
+                                Advanced Training Programs: Access advanced training programs and workshops that delve deeper into strategic business planning and growth.
+                                
+                            </li>
+                            <li>
+                                Featured in Chamber Publications: Be featured in chamber publications, including newsletters and annual reports, increasing your brand exposure.
+                                
+                            </li>
+                            <li>
+                                Enhnced Online Directory Listing: Receive an enhanced listing in the online directory with additional information, making it easier for potential clients to find and connect with your business.
+                                
+                            </li>
+                            
+                            <li>
+                                Event Sponsorship Opportunities: Enjoy priority sponsorship opportunities for chamber events, elevating your brand and showing support for the local business community.
+                            
+                            </li>
+                        </ul>
+                    </td><td>$500/year</td>
+
+                </tr>
+                <tr>
+                    <td> Gold </td>
+                    <td>
+                    <ul>
+                            <li>
+                                VIP Networking Events: Enjoy VIP access to exclusive networking events, providing unparalleled opportunities to connect with top-tier professionals.
+        
+                            </li>
+                            <li>
+                                Executive Leadership Programs: Participate in executive leadership programs designed to hone leadership skills and foster strategic thinking.
+                                
+                            </li>
+                            <li>
+                                Premier Advertising Opportunities: Receive prime placement in chamber communications, including the homepage, newsletters, and social media platforms, maximizing your exposure.
+                                
+                            </li>
+                            <li>
+                                Featured Speaker Opportunities: Secure opportunities to be a featured speaker at select chamber events, positioning your business as an industry leader.
+                                
+                            </li>
+                            <li>
+                                Customized Business Assistance: Receive personalized business assistance and support from chamber experts, tailored to your specific needs and goals.
+                            
+                            </li>
+                    </ul>
+                    </td><td>$1,000/year</td>
+                </tr>
+                
+            </table>
+        </section>
     </main>
     <footer>
         <span>info@fakechamber.com </span><span> Built by Noah Smith </span><span>for WDD 230 </span><br>

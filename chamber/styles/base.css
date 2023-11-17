@@ -112,7 +112,27 @@ footer {
     text-decoration: none;
 
 }
+form {
+    
+}
 
+form input {
+    background-color: var(--teriary-color);
+    display: block;
+}
+
+form label {
+    display: block;
+    margin: 1%;
+}
+
+select {
+    background-color: var(--highlight-color);
+}
+
+textarea {
+    background-color: var(--teriary-color);
+}
 
 @media screen and (max-width:499px) {
 
@@ -166,25 +186,5 @@ footer {
         flex-wrap: wrap;
     }
 
-    form {
-        background-color: var(--secondary-color);
-    }
-
-    form input {
-        background-color: var(--teriary-color);
-        display: block;
-    }
-
-    form label {
-        display: block;
-        margin: 1%;
-    }
-
-    select {
-        background-color: var(--highlight-color);
-    }
-
-    textarea {
-        background-color: var(--teriary-color);
-    }
+    
 }
