@@ -42,6 +42,8 @@ window.onload = function() {
     let day = daysnames[date.getDay()];
     let month = date.getMonth() + 1;
     let year = date.getFullYear();
+    let banner = document.getElementById('banner');
+
 
   
     let fullDateString = "Last Updated: " + day + ", " + month + "/" + date.getDate() + "/" + year + " at " + date.getHours() + ":" + date.getMinutes() + " EDT";
@@ -51,7 +53,16 @@ window.onload = function() {
     let copySting = ` &copy ${year} || Noah C. Smith || Virginia, USA`;
     let element2 = document.getElementById('copy')
     element2.innerHTML = copySting;
-
+    let d = new Date();
+    let today = d.getDay();
+    if (today == 1 || today == 2 || today == 3) {
+      banner.classList.remove("active");
+    }
+    function closeBanner(){
+      banner.classList.add('active');
+    }
+    const close = document.getElementById('close');
+    close.addEventListener('click',closeBanner); 
   };
   
   

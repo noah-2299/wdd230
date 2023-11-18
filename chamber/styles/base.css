@@ -55,6 +55,12 @@ section {
     border: solid var(--primary-color);
         border-radius: 20px;
 }
+#banner{
+    text-align: center;
+    background-color: var(--highlight-color);
+    grid-column: 1/-1;
+    justify-content: space-between;
+}
 
 .hero {
     grid-column: 1/4;
@@ -139,8 +145,6 @@ textarea {
     background-color: var(--highlight-color);
 }
 .membership dt {
-    text-decoration: bold;
-    
     font-size: 1.2rem;
 }
 
