@@ -35,7 +35,7 @@
     </nav>
     <main>
         
-        <section>
+        <section class="sign-up">
             <h2>Sign Up Form</h2>
             <form method="get" action="thankyou.html">
                 <fieldset>
@@ -44,11 +44,11 @@
                     </legend>
                     <label>First Name * <input type="text" name="fname" id="fname" required></label>
                     <label>Last Name * <input type="text" name="lname" id="lname" required></label>
-                    <label>Title/Position <input type="text" name="title" id="title"></label>
+                    <label>Title/Position <input type="text" name="title" id="title" pattern="[a-zA-Z\- ]{7,}" title="Please enter at least 7 letter characters, hyphens, and spaces only." required></label>
                     <label>Email Address * <input type="email" name="email" id="email" required placeholder="sample@example.com"></label>
                     <label>Mobile Phone #  *<input type="tel" name="phone" id="phone" required></label>
                     <label>Organization/Company<input type="text" name="orgname" id="orgname" required></label>
-                    
+                </fieldset>
                     <fieldset>
                         <legend>Membership</legend>
                         <label> Level
@@ -74,8 +74,8 @@
                     </fieldset>
                     <fieldset>
                         <legend>Description</legend>
-                        <label>Please provide a short description of your Organization <textarea cols="100" rows="10" name="description" id="description"></textarea></label>
-                        <label><input type="hidden" name="timestamp" id="timestamp" value="datetime.now()"></label>
+                        <label>Please provide a short description of your Organization <textarea rows="10" name="description" id="description"></textarea></label>
+                        <label><input type="hidden" name="timestamp" id="timestamp" value=""></label>
                     </fieldset>
                 </fieldset>
                 
@@ -85,7 +85,7 @@
         </section>
         <section class="membership">
             <h2>Membership Tiers</h2>
-            <table>
+            <table id="mem-table">
                 <tr>
                     <th>Teir </th> <th>Description</th> <th>Pricing</th>
                 </tr>
@@ -93,11 +93,11 @@
                     <td> NP</td>
                     <td>
                         <dl>
-                            <dt>Exclusive Non-profit Networking Events:</dt><dd> Attend specialized networking events tailored for non-profit organizations to connect with like-minded peers and potential collaborators.</dd>
-                            <dt>Training and Development Workshops:</dt><dd> Access to exclusive workshops and training sessions designed to enhance the skills and capabilities of non-profit professionals.</dd>
-                            <dt>Featured on Non-profit Directory:</dt><dd> Gain visibility through inclusion in the chamber's non-profit directory, showcasing your organization to the local business community.</dd>
-                            <dt>Access to Resource Library:</dt><dd> Enjoy free access to a library of resources including articles, guides, and templates specifically curated for non-profit success.</dd>
-                            <dt>Promotional Opportunities:</dt><dd> Receive special consideration for promotional opportunities within the chamber's communications, including newsletters and social media.</dd>
+                            <dt>Exclusive Non-profit Networking Events:</dt><dd class = 'active'> Attend specialized networking events tailored for non-profit organizations to connect with like-minded peers and potential collaborators.</dd>
+                            <dt>Training and Development Workshops:</dt><dd class = 'active'> Access to exclusive workshops and training sessions designed to enhance the skills and capabilities of non-profit professionals.</dd>
+                            <dt>Featured on Non-profit Directory:</dt><dd class = 'active'> Gain visibility through inclusion in the chamber's non-profit directory, showcasing your organization to the local business community.</dd>
+                            <dt>Access to Resource Library:</dt><dd class = 'active'> Enjoy free access to a library of resources including articles, guides, and templates specifically curated for non-profit success.</dd>
+                            <dt>Promotional Opportunities:</dt><dd class = 'active'> Receive special consideration for promotional opportunities within the chamber's communications, including newsletters and social media.</dd>
                         </dl>
                     </td>
                         <td>FREE</td>
@@ -106,24 +106,33 @@
                     <td> Bronze </td>
                     <td>
                         <dl>
-                            <dd>
-                                Standard Networking Events: Attend regular networking events to connect with local businesses and professionals.
+                            <dt>Standard Networking Events:</dt>
+
+                            <dd class = 'active'>
+                                 Attend regular networking events to connect with local businesses and professionals.
         
                             </dd>
-                            <dd>
-                                Business Training Seminars: Participate in business training seminars covering a range of topics to enhance your organizational skills and business acumen.
+                            <dt>Business Training Seminars:</dt>
+                            
+                            <dd class = 'active'>
+                                 Participate in business training seminars covering a range of topics to enhance your organizational skills and business acumen.
                                 
                             </dd>
-                            <dd>
-                                Online Business Directory Listing: Secure a spot in the online chamber directory, boosting your visibility among potential clients and partners.
+                            <dt>Online Business Directory Listing:</dt>
+                            
+                            <dd class = 'active'>
+                                 Secure a spot in the online chamber directory, boosting your visibility among potential clients and partners.
                                 
                             </dd>
-                            <dd>
-                                Event Discounts: Enjoy exclusive discounts on chamber-hosted events, workshops, and seminars, providing cost-effective opportunities for professional development.
+                            <dt>Event Discounts:</dt>
+                            <dd class = 'active'>
+                                 Enjoy exclusive discounts on chamber-hosted events, workshops, and seminars, providing cost-effective opportunities for professional development.
                                 
                             </dd>
-                            <dd>
-                                Spotlight Position on Home Page: Benefit from a rotating spotlight position on the chamber's homepage, increasing visibility for your business.
+                            <dt>Spotlight Position on Home Page:</dt>
+                            
+                            <dd class = 'active'>
+                                 Benefit from a rotating spotlight position on the chamber's homepage, increasing visibility for your business.
                                 
                             </dd>
                         </dl>
@@ -134,24 +143,30 @@
                     <td> Silver </td>
                     <td>
                         <dl>
-                            <dd>
-                                Premium Networking Events: Gain access to premium networking events with key industry leaders and decision-makers.
+                            <dt>Premium Networking Events:</dt>
+                            <dd class = 'active'>
+                                 Gain access to premium networking events with key industry leaders and decision-makers.
         
                             </dd>
-                            <dd>
-                                Advanced Training Programs: Access advanced training programs and workshops that delve deeper into strategic business planning and growth.
+                            <dt>Advanced Training Programs:</dt>
+                            <dd class = 'active'>
+                                 Access advanced training programs and workshops that delve deeper into strategic business planning and growth.
                                 
                             </dd>
-                            <dd>
-                                Featured in Chamber Publications: Be featured in chamber publications, including newsletters and annual reports, increasing your brand exposure.
+                            <dt>Featured in Chamber Publications:</dt>
+                            <dd class = 'active'>
+                                Be featured in chamber publications, including newsletters and annual reports, increasing your brand exposure.
                                 
                             </dd>
-                            <dd>
+                            <dt></dt>
+
+                            <dd class = 'active'>
                                 Enhnced Online Directory Listing: Receive an enhanced listing in the online directory with additional information, making it easier for potential clients to find and connect with your business.
                                 
                             </dd>
+                            <dt></dt>
                             
-                            <dd>
+                            <dd class = 'active'>
                                 Event Sponsorship Opportunities: Enjoy priority sponsorship opportunities for chamber events, elevating your brand and showing support for the local business community.
                             
                             </dd>
@@ -163,24 +178,33 @@
                     <td> Gold </td>
                     <td>
                     <dl>
-                            <dd>
-                                VIP Networking Events: Enjoy VIP access to exclusive networking events, providing unparalleled opportunities to connect with top-tier professionals.
+                        <dt>VIP Networking Events:</dt>
+                            <dd class = 'active'>
+                                 Enjoy VIP access to exclusive networking events, providing unparalleled opportunities to connect with top-tier professionals.
         
                             </dd>
-                            <dd>
-                                Executive Leadership Programs: Participate in executive leadership programs designed to hone leadership skills and foster strategic thinking.
+                            <dt>Executive Leadership Programs:</dt>
+                            
+                            <dd class = 'active'>
+                                 Participate in executive leadership programs designed to hone leadership skills and foster strategic thinking.
                                 
                             </dd>
-                            <dd>
-                                Premier Advertising Opportunities: Receive prime placement in chamber communications, including the homepage, newsletters, and social media platforms, maximizing your exposure.
+                            <dt>Premier Advertising Opportunities:</dt>
+                            
+                            <dd class = 'active'>
+                                 Receive prime placement in chamber communications, including the homepage, newsletters, and social media platforms, maximizing your exposure.
                                 
                             </dd>
-                            <dd>
-                                Featured Speaker Opportunities: Secure opportunities to be a featured speaker at select chamber events, positioning your business as an industry leader.
+                            <dt>Featured Speaker Opportunities:</dt>
+                            
+                            <dd class = 'active'>
+                                 Secure opportunities to be a featured speaker at select chamber events, positioning your business as an industry leader.
                                 
                             </dd>
-                            <dd>
-                                Customized Business Assistance: Receive personalized business assistance and support from chamber experts, tailored to your specific needs and goals.
+                            <dt>Customized Business Assistance:</dt>
+                            
+                            <dd class = 'active'>
+                                 Receive personalized business assistance and support from chamber experts, tailored to your specific needs and goals.
                             
                             </dd>
                     </dl>
@@ -196,6 +220,7 @@
         <p id="copy"></p>
     </footer>
     <script src="scripts/script.js"></script>  
-    <script src="scripts/hamburger.js"></script>  
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/form.js"></script>  
 </body>
 </html>

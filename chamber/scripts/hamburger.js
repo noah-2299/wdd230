@@ -1,6 +1,12 @@
 const navItems = document.getElementById('navbar');
 const hamburgerButton = document.getElementById('button');
 let isActive = false;
+// Broken code to try and show descripting of tiers needs work
+// const row = document.addEventListener('hover')
+// const descriptions = document.querySelectorAll('trdd');
+// descriptions.forEach((description) => {
+//     description.classList.remove('active')
+// });
 
 function activateMenu(){
     if (isActive){

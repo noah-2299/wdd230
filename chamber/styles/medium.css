@@ -81,4 +81,10 @@
     #weather-img{
         width: 20vw;
     }
+    .membership {
+        grid-column: 3/4;
+    }
+    .sign-up{
+        grid-column: 1/3;
+    }
 }

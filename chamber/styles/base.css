@@ -53,7 +53,8 @@ section {
     background-color: var(--teriary-color);
     margin: 1em;
     border: solid var(--primary-color);
-        border-radius: 20px;
+    border-radius: 20px;
+    
 }
 #banner{
     text-align: center;
@@ -115,7 +116,9 @@ footer {
     text-decoration: none;
 
 }
-
+.sign-up{
+    width: fit-content;
+}
 form input {
     background-color: var(--teriary-color);
     display: block;
@@ -132,21 +135,27 @@ select {
 
 textarea {
     background-color: var(--teriary-color);
+    width: 90%;
 }
 
-.membership table {
+.membership{
     padding: 5%;
+    border: var(--highlight-color) solid;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
 .membership h2 {
     text-align: center;
 }
 
-.membership tr:hover {
-    background-color: var(--highlight-color);
-}
+
 .membership dt {
     font-size: 1.2rem;
 }
+
 
 
 
