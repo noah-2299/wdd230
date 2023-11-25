@@ -3,11 +3,25 @@
     --secondary-color: #AAC1E1;
     --teriary-color: lightgray;
     --highlight-color: #9BC1B4;
+    --link-color: black;
+    --font-color: black;
+
 
 }
+[data-theme="dark"] {
+    --primary-color: rgb(3, 0, 85);
+    --secondary-color: #363658;
+    --teriary-color: rgb(47, 47, 47);
+    --highlight-color: #055f5f;
+    --font-color: #b6b6b6;
+    --link-color: white;
+    --bg-color: #000000;
+}
+
 
 body {
     background-color: var(--teriary-color);
+    color: var(--font-color);
 }
 
 header {
@@ -63,6 +77,14 @@ section {
     justify-content: space-between;
 }
 
+#banner button {
+    background-color: var(--highlight-color);
+}
+#banner p{
+    margin: 0;
+    padding: 1%;
+}
+
 .hero {
     grid-column: 1/4;
     margin-top: 0px;
@@ -91,11 +113,14 @@ section {
 footer {
     display: flex;
     align-content: center;
-    justify-content: center;
+    justify-content: space-around;
     background-color: var(--primary-color);
     border-top: black solid 5px;
-}
 
+}
+a{
+    color: var(--link-color);
+}
 
 .active {
     display: none;
@@ -112,7 +137,7 @@ footer {
     width: 6em;
     height: 1em;
     position: absolute;
-    color: black;
+    color: var(--font-color);
     text-decoration: none;
 
 }
@@ -122,6 +147,7 @@ footer {
 form input {
     background-color: var(--teriary-color);
     display: block;
+    color: var(--font-color);
 }
 
 form label {
@@ -155,6 +181,71 @@ textarea {
 .membership dt {
     font-size: 1.2rem;
 }
+.theme-switch-wrapper{
+    padding: 5px;
+}
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    
+  }
+  
+  /* Hide default HTML checkbox */
+  .theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
 
 
 
@@ -188,7 +279,7 @@ textarea {
         width: 100%;
         margin-bottom: 0;
         background-color: var(--secondary-color);
-        color: black;
+        color: var(--font-color);
         text-decoration: none;
         transition: 0.4s;
         margin: auto;

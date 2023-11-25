@@ -1,0 +1,95 @@
+{
+    "members": [
+        {
+            "member_id": "01",
+            "fname": "John",
+            "lname": "Doe",
+            "title": "CEO",
+            "email": "john.doe@example.com",
+            "address": "123 Main St, Cityville",
+            "phone_number": "+1 (555) 123-4567",
+            "website": "www.exampleceo.com",
+            "company_name": "ABC Corporation",
+            "image": "",
+            "member_level": "Gold"
+        },
+        {
+            "member_id": "02",
+            "fname": "Jane",
+            "lname": "Smith",
+            "title": "CTO",
+            "email": "jane.smith@example.com",
+            "address": "456 Tech Blvd, Innovation City",
+            "phone_number": "+1 (555) 987-6543",
+            "website": "www.examplecto.com",
+            "company_name": "XYZ Tech Solutions",
+            "image": "",
+            "member_level": "Silver"
+        },
+        {
+            "member_id": "03",
+            "fname": "Michael",
+            "lname": "Johnson",
+            "title": "CFO",
+            "email": "michael.johnson@example.com",
+            "address": "789 Finance Lane, Moneytown",
+            "phone_number": "+1 (555) 321-0987",
+            "website": "www.examplecfo.com",
+            "company_name": "123 Finance Corp",
+            "image": "",
+            "member_level": "Bronze"
+        },
+        {
+            "member_id": "04",
+            "fname": "Emily",
+            "lname": "Williams",
+            "title": "COO",
+            "email": "emily.williams@example.com",
+            "address": "987 Operations St, Efficiencypolis",
+            "phone_number": "+1 (555) 456-7890",
+            "website": "www.examplecoo.com",
+            "company_name": "Efficient Enterprises",
+            "image": "",
+            "member_level": "Gold"
+        },
+        {
+            "member_id": "05",
+            "fname": "Daniel",
+            "lname": "Brown",
+            "title": "CMO",
+            "email": "daniel.brown@example.com",
+            "address": "456 Marketing Ave, Brandcity",
+            "phone_number": "+1 (555) 789-0123",
+            "website": "www.examplecmo.com",
+            "company_name": "Brand Builders Inc.",
+            "image": "",
+            "member_level": "Silver"
+        },
+        {
+            "member_id": "06",
+            "fname": "Olivia",
+            "lname": "Miller",
+            "title": "HR Manager",
+            "email": "olivia.miller@example.com",
+            "address": "789 HR Street, Talentville",
+            "phone_number": "+1 (555) 012-3456",
+            "website": "www.examplehr.com",
+            "company_name": "People Power Ltd.",
+            "image": "",
+            "member_level": "NP"
+        },
+        {
+            "member_id": "07",
+            "fname": "William",
+            "lname": "Jones",
+            "title": "IT Director",
+            "email": "william.jones@example.com",
+            "address": "123 IT Lane, Techville",
+            "phone_number": "+1 (555) 234-5678",
+            "website": "www.exampleit.com",
+            "company_name": "Tech Innovators LLC",
+            "image": "",
+            "member_level": "Bronze"
+        }
+    ]
+}

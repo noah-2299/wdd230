@@ -30,7 +30,7 @@
         background-color: var(--secondary-color);
         border-bottom: solid black 1px;
         border-radius: 5px;
-        color: black;
+        color: var(--font-color);
         text-decoration: none;
         transition: 0.4s;
     }
