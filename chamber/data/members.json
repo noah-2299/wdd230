@@ -10,7 +10,7 @@
             "phone_number": "+1 (555) 123-4567",
             "website": "www.exampleceo.com",
             "company_name": "ABC Corporation",
-            "image": "",
+            "image": "images/logo1.svg",
             "member_level": "Gold"
         },
         {
@@ -23,7 +23,7 @@
             "phone_number": "+1 (555) 987-6543",
             "website": "www.examplecto.com",
             "company_name": "XYZ Tech Solutions",
-            "image": "",
+            "image": "images/logo2.svg",
             "member_level": "Silver"
         },
         {
@@ -36,7 +36,7 @@
             "phone_number": "+1 (555) 321-0987",
             "website": "www.examplecfo.com",
             "company_name": "123 Finance Corp",
-            "image": "",
+            "image": "images/logo3.svg",
             "member_level": "Bronze"
         },
         {
@@ -49,7 +49,7 @@
             "phone_number": "+1 (555) 456-7890",
             "website": "www.examplecoo.com",
             "company_name": "Efficient Enterprises",
-            "image": "",
+            "image": "images/logo4.svg",
             "member_level": "Gold"
         },
         {
@@ -62,7 +62,7 @@
             "phone_number": "+1 (555) 789-0123",
             "website": "www.examplecmo.com",
             "company_name": "Brand Builders Inc.",
-            "image": "",
+            "image": "images/logo5.svg",
             "member_level": "Silver"
         },
         {
@@ -75,7 +75,7 @@
             "phone_number": "+1 (555) 012-3456",
             "website": "www.examplehr.com",
             "company_name": "People Power Ltd.",
-            "image": "",
+            "image": "images/logo6.svg",
             "member_level": "NP"
         },
         {
@@ -88,7 +88,7 @@
             "phone_number": "+1 (555) 234-5678",
             "website": "www.exampleit.com",
             "company_name": "Tech Innovators LLC",
-            "image": "",
+            "image": "images/logo7.svg",
             "member_level": "Bronze"
         }
     ]
