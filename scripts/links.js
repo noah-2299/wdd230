@@ -7,23 +7,7 @@ async function getLinks() {
     console.log(data);
     displayLinks(data);
   }
-
-  // const displayLinks = (weeks) =>{
-  //   weeks.forEach((week) => {
-
-  //     let tr = document.createElement('tr');
-  //     let lesson_td = document.createElement('td');
-  //     let links_td = document.createElement('td');
-
-  //     lesson_td.textContent = `lesson${week.lesson}:`;
-  //     weeks.forEach((link) => {
-  //       let a = document.createElement('a');
-  //       a.setAttribute('href',`${link.url}`);
-  //       a.textContent = `${link.title} ,`;
-  //       links_td.appendChild(a);
-  //       })
-  //   })
-  // };
+  
   const displayLinks = (weeks) => {
     let table = document.getElementById('week-list');
     weeks.lessons.forEach((lesson) => {

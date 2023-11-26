@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <title>Join The Family</title>
+    <title>Empower Your Network: Register with Winchester Chamber of Commmerce Now</title>
 
 </head>
 <body>
@@ -31,7 +31,7 @@
         <a href="index.html">Home</a>
         <a href="discover.html">Discover</a>
         <a href="directory.html">Directory</a>
-        <a href="join.html">Join</a>
+        <a id="current-page" href="join.html">Join</a>
     </nav>
     <main class="join">
         <section class="sign-up">
@@ -41,17 +41,17 @@
                     <legend>
                         Applicant Info
                     </legend>
-                    <label>First Name * <input type="text" name="fname" id="fname" required></label>
-                    <label>Last Name * <input type="text" name="lname" id="lname" required></label>
+                    <label>First Name * <input type="text" name="fname" id="fname" autocomplete="given-name"></label>
+                    <label>Last Name * <input type="text" name="lname" id="lname" autocomplete="family-name"></label>
                     <label>Title/Position <input type="text" name="title" id="title" pattern="[a-zA-Z\- ]{7,}" title="Please enter at least 7 letter characters, hyphens, and spaces only." required></label>
-                    <label>Email Address * <input type="email" name="email" id="email" required placeholder="sample@example.com"></label>
-                    <label>Mobile Phone #  *<input type="tel" name="phone" id="phone" required></label>
+                    <label>Email Address * <input type="email" name="email" id="email" autocomplete="email" required placeholder="sample@example.com"></label>
+                    <label>Mobile Phone #  *<input type="tel" name="phone" id="phone" autocomplete="phone"></label>
                     <label>Organization/Company<input type="text" name="orgname" id="orgname" required></label>
                 </fieldset>
                     <fieldset>
                         <legend>Membership</legend>
                         <label> Level
-                            <select>
+                            <select name="membership" id="membership">
                                 <option value="">
                                     SELECT 
                                 </option>
@@ -213,14 +213,14 @@
         </section>
     </main>
     <footer>
-        <p>info@fakechamber.com<br> Built by Noah Smith<br>WDD 230 </span> </p>
+        <p>info@fakechamber.com<br> Built by Noah Smith<br>WDD 230 </p>
         <p><span id="copy"> || </span> || <span id="lastModified"></span></p>
         
         
         <div class="theme-switch-wrapper">
             <label class="theme-switch" for="checkbox">
             <input type="checkbox" id="checkbox" />
-            <div class="slider round"></div>
+            <span class="slider round"></span>
           </label>
           <p>Dark Mode</p>
           </div>

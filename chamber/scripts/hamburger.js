@@ -19,7 +19,7 @@ function activateMenu(){
         navItems.classList.add('active');
         isActive = true;
     }
-    console.log('button pushed')
+
 }
 
 hamburgerButton.addEventListener('click', activateMenu);
