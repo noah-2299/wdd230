@@ -17,7 +17,7 @@
     <link rel="icon" href="images/icon.svg">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/meduim.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <title>Discover Winchester's Hidden Gems: Explore with Winchester Chamber of Commerce</title>
 
@@ -38,7 +38,6 @@
         <a href="join.html">Join</a>
     </nav>
     <main class="discover">
-        <div class="discover">
         <div class="sidebar">
             <h2>Discover</h2>
             <section class="demographics">
@@ -121,42 +120,44 @@
             </section>
         </div>
         <div class="image-gallery">
-            <picture loading="lazy">
-                <source srcset="images/library1.jpg" media="(min-width: 1000px)" >
-                <source srcset="images/library2.jpg" media="(min-width: 500px)" >
-                <img src="images/library3.png" alt="Winchester Library" width="800" height="600">
+            <picture>
+                <source srcset="images/library_large.webp" media="(min-width: 1000px)">
+                <source srcset="images/library_medium.webp" media="(min-width: 500px)" >
+                <img loading="lazy" src="images/library_small.webp" alt="Winchester Library" width="720" height="300">
             </picture>
-            <picture loading="lazy">
+            <div class="description"><h3>Winchester public library!</h3></div>
+
+            <picture>
                 <source srcset="images/museum_large.webp" media="(min-width: 1000px)">
                 <source srcset="images/museum_medium.webp" media="(min-width: 500px)">
-                <img src="images/museum_small.webp" alt="" width="800" height="600">
-
+                <img loading="lazy" src="images/museum_small.webp" alt="The Museum" width="720" height="300">
             </picture>
-            <picture loading="lazy">
+            <div class="description"><h3>The Museum</h3></div>
+            
+            <picture>
                 <source srcset="images/oldtown_large.webp" media="(min-width: 1000px)">
                 <source srcset="images/oldtown_medium.webp" media="(min-width: 500px)">
-                <img src="images/oldtown_small.webp" alt="Old Town Winchester">
+                <img loading="lazy" src="images/oldtown_small.webp" alt="Old Town Winchester" width="720" height="300">
+                
+            </picture>
+            <div class="description"><h3>Old Town Winchester</h3></div>
 
+            <picture>
+                <source srcset="images/orchards1.webp" media="(min-width: 1000px)">
+                <source srcset="images/orchards2.webp" media="(min-width: 500px)">
+                <img loading="lazy" src="images/orchards3.webp" alt="Winchester Orchard" width="720" height="300">
             </picture>
-            <picture loading="lazy">
-                <source srcset="">
-                <source srcset="">
-                <img src="images/orchards.jpg" alt="">
+            <div class="description"><h3>Orchard</h3></div>
 
+            <picture>
+                <source srcset="images/home_large.webp" media="(min-width: 1000px)">
+                <source srcset="images/home_medium.webp" media="(min-width: 500px)">
+                <img loading="lazy" src="images/home_small.webp" alt="House in Winchster" width="720" height="300">
             </picture>
-            <picture loading="lazy">
-                <source srcset="">
-                <source srcset="">
-                <img src="images/home.webp" alt="">
+            <div><h3>Housing in Winchester</h3></div>
 
-            </picture>
-            <picture loading="lazy">
-                <source srcset="">
-                <source srcset="">
-                <img src="" alt="">
-            </picture>
         </div>
-    </div>
+    
     </main>
     <footer>
         <p>info@fakechamber.com<br> Built by Noah Smith<br>WDD 230 </p>
@@ -165,7 +166,7 @@
         
         <div class="theme-switch-wrapper">
             <label class="theme-switch" for="checkbox">
-            <input type="checkbox" id="checkbox" />
+            <input type="checkbox" id="checkbox">
             <span class="slider round"></span>
           </label>
           <p>Dark Mode</p>

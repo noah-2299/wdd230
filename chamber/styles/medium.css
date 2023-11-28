@@ -80,7 +80,10 @@
 
     }
     #weather-img{
-        width: 20vw;
+        width: 7rem;
+    }
+    .weather-labels, table{
+        margin: 0 auto;
     }
     .membership {
         grid-column: 3/4;

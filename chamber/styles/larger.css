@@ -65,7 +65,7 @@
         justify-content: space-between;
         width: 90%;
         text-align: center;
-        
+       
         font-size: 1.2rem;
     }
     .weather  h2{
@@ -73,10 +73,12 @@
         width: 100%;
         height: 2rem;
     }
-    
+    .weather-labels, table{
+        margin: 0 auto;
+    }
 
     #weather-img{
-        width: 20vw;
+        width: 7rem;
     }
     .membership {
         grid-column: 3/4;
