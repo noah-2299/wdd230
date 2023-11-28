@@ -56,7 +56,6 @@ const apiKey = 'c5bf1eb7a0bb464a8b9140952231610';
       let response = await fetch(forecast);
       let object = await response.json();
       let forecast_data = object.forecast
-      console.log(forecast_data);
       displayForecast(forecast_data);
     }
 
@@ -92,8 +91,6 @@ function displayForecast(forecast_data)
     card.appendChild(min_temp);
     card.appendChild(max_temp);
     parent.appendChild(card);
-    
-    console.log(temp);
 
 })
 };
