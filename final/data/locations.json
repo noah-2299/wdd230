@@ -1,0 +1,19 @@
+{
+    "locations": [
+        {
+            "location_num": 1,
+            "desc": "Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel",
+            "steet_address": "C. 7 Sur 65, Centro, 77600 Cozumel, Q.R., Mexico",
+            "city":"",
+            "google_maps": ""
+        },
+        {
+            "location_num": 2,
+            "desc": "Terminal Puerta Maya further south along the coast",
+            "steet_address": "Carretera costera sur km 4 mas 230 #1300 local 3, sur, Zona Hotelera Nte., 77675 Cozumel, Q.R., Mexico",
+            "city":"",
+            "coordinates":"20°28'37.4N 86°58'21.8W",
+            "google_maps": ""
+        }
+    ]
+}

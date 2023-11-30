@@ -1,0 +1,16 @@
+:root{
+    
+    
+}
+
+[data-theme="dark"] {
+
+}
+
+#weather-banner {
+    display: none;
+    padding: 10px;
+    background-color: #ff6666;
+    color: #fff;
+    text-align: center;
+}

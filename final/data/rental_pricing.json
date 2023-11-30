@@ -1,0 +1,82 @@
+{
+    "rentals": [
+        {
+            "rental_type": "~Honda Metro Scooter",
+            "max_persons": 1,
+            "pricing": [
+                {
+                    "res_half": "$20",
+                    "res_full": "$30",
+                    "walk_half": "$25",
+                    "walk_full": "$35"
+                }
+            ],
+            "image_url": ""
+        },
+        {
+            "rental_type": "~Honda Dio Scooter",
+            "max_persons": 2,
+            "pricing": [
+                {
+                    "res_half": "$30",
+                    "res_full": "$40",
+                    "walk_half": "$35",
+                    "walk_full": "$45"
+                }
+            ],
+            "image_url": ""
+        },
+        {
+            "rental_type": "~Honda PCX150 Scooter",
+            "max_persons": 2,
+            "pricing": [
+                {
+                    "res_half": "$40",
+                    "res_full": "$50",
+                    "walk_half": "$45",
+                    "walk_full": "$55"
+                }
+            ],
+            "image_url": ""
+        },
+        {
+            "rental_type": "Honda Pioneer ATV",
+            "max_persons": 4,
+            "pricing": [
+                {
+                    "res_half": "$50",
+                    "res_full": "$70",
+                    "walk_half": "$60",
+                    "walk_full": "$80"
+                }
+            ],
+            "image_url": ""
+        },
+        {
+            "rental_type": "Jeep Wrangler - 4 door with a/c",
+            "max_persons": 5,
+            "pricing": [
+                {
+                    "res_half": "$70",
+                    "res_full": "$100",
+                    "walk_half": "$85",
+                    "walk_full": "$125"
+                }
+            ],
+            "image_url": ""
+        },
+        {
+            "rental_type": "Jeep Wrangler - 2 door",
+            "max_persons": 4,
+            "pricing": [
+                {
+                    "res_half": "$60",
+                    "res_full": "$85",
+                    "walk_half": "$70",
+                    "walk_full": "$90"
+                }
+            ],
+            "image_url": ""
+        }
+    ]
+}
