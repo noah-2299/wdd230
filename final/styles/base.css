@@ -1,10 +1,38 @@
+
+
+
 :root{
-    
+    --deep-blue: #03071E;
+    --purple-red: #370617;
+    --orange-red: #9D0208;
+    --bright-red: #D00000;
+    --darker-orange: #DC2F02;
+    --lighter-orange: #E85D04;
+    --mustard: #F48C06;
+    --yellow: #FFBA08;
+    --font-color: black;
+    --sans-serif: Ariel, Hetvelica, san-serif;
     
 }
 
 [data-theme="dark"] {
+    --font-color:white;
 
+}
+body{
+    margin: 0;
+}
+
+.hero{
+    background-color: var(--bright-red);
+    background-image: url("../images/hero.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-blend-mode: lighten;
+    text-align: center;
+    padding-top: 30vh ;
+    padding-bottom: 30vh;
+    
 }
 
 #weather-banner {
@@ -14,3 +42,4 @@
     color: #fff;
     text-align: center;
 }
+
