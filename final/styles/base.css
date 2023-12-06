@@ -2,16 +2,17 @@
 
 
 :root{
-    --deep-blue: #03071E;
-    --purple-red: #370617;
-    --orange-red: #9D0208;
-    --bright-red: #D00000;
-    --darker-orange: #DC2F02;
-    --lighter-orange: #E85D04;
-    --mustard: #F48C06;
-    --yellow: #FFBA08;
-    --font-color: black;
-    --sans-serif: Ariel, Hetvelica, san-serif;
+    ---tangerine: #e98827ff;
+    --eggshell: #f1ead7ff;
+    --sea-green: #20894eff;
+    --cambridge-blue: #7db7aaff;
+    --khaki: #bfb7a0ff;
+    --syracuse-red-orange: #d45419ff;
+    --rich-black: #0a0f22ff;
+
+    --primary-color:var(--khaki);
+
+    
     
 }
 
@@ -19,16 +20,32 @@
     --font-color:white;
 
 }
+
 body{
+    background-color: var(--khaki);
     margin: 0;
+    
 }
 
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+main{
+    background-image: url("../images/background.png");
+    background-size:contain;
+}
+
+#weather-1{
+    display: flex;
+}
 .hero{
-    background-color: var(--bright-red);
+    background-color: var(--syracuse-red-orange);
     background-image: url("../images/hero.jpg");
     background-repeat: no-repeat;
     background-size:cover;
-    background-blend-mode: lighten;
+    
     text-align: center;
     padding-top: 30vh ;
     padding-bottom: 30vh;
