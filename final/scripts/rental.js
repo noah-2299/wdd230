@@ -22,7 +22,7 @@ function displayTable(data){
         pricing.forEach(price=>{
             let column = document.createElement('td');
             // console.log(price);
-            column.innerText = price[0];
+            column.innerText = Object.values(price);
             row.appendChild(column);
         });
         table.appendChild(row);

@@ -1,0 +1,36 @@
+@media (min-width:700px) {
+    #home{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5vh;
+
+    }
+    .row{
+        display: grid;
+    }
+    .row:nth-child(odd){
+        grid-template-columns: 1fr 2fr;
+        
+    }
+    .row:nth-child(odd) aside{
+        grid-column: 2;
+    }
+    .row:nth-child(even){
+        grid-template-columns: 2fr 1fr;
+    }
+    .row:nth-child(even) aside{
+        grid-column: 1;
+    }
+    .row section{
+        grid-row: 1;
+    }
+    .row aside{
+        grid-row: 1;
+    }
+    nav{
+        justify-content: space-between;
+    }
+    footer{
+        justify-content: space-around;
+    }
+}

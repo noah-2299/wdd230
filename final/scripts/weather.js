@@ -4,14 +4,10 @@ const apiKey = "e4d4269dfc273073127dd60fc4d3b6de";
 const lat = "20.3019";
 const lon = "86.5642";
 const currentUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
-const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric&cnt=12`;
+const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric&cnt=8`;
 
 
-//DOM varible declarations
-const temp_element = document.getElementById('temp');
-const desc_element = document.getElementById('weather-description');
-const icon_element = document.getElementById('weather-icon');
-const humidity_element = document.getElementById('humidity');
+
 
 
 const forecast_day1 = document.getElementById("weather-1");
@@ -30,17 +26,44 @@ async function getWeather(url){
   }
 
 
+let forecast_row_1 = document.getElementById('forecast-row-1');
+let forecast_row_2 = document.getElementById('forecast-row-2');
+let forecast_row_3 = document.getElementById('forecast-row-3');
+let forecast_row_4 = document.getElementById('forecast-row-4');
+
 getWeather(currentUrl).then(data => {
-    let temp = data.main.temp + ' °C';
+    let temp = Math.round(data.main.temp) + ' °C';
+    let main = data.weather[0].main;
     let desc = data.weather[0].description;
     let icon = data.weather[0].icon;
     let icon_src = `https://openweathermap.org/img/wn/${icon}.png`;
-    let humidity = data.main.humidity;
+    let humidity = data.main.humidity + '%';
 
-    temp_element.innerText = temp;
-    desc_element.innerText = desc;
-    icon_element.setAttribute('src',icon_src);
-    humidity_element.innerText = humidity;
+    const current_header = document.createElement('td');
+    const current_temp = document.createElement('td');
+    const current_main =document.createElement('p');
+    const current_desc = document.createElement('p');
+    const current_icon = document.createElement('img');
+    const current_humidity = document.createElement('td');
+    const current_conditions = document.createElement('td');
+    
+    current_main.innerText = main;
+    current_header.innerText = "Current";
+    current_temp.innerText = temp;
+    current_desc.innerText = desc;
+    current_humidity.innerText = humidity;
+    current_icon.setAttribute('src', icon_src);
+
+    current_conditions.appendChild(current_main);
+    current_conditions.appendChild(current_icon);
+    current_conditions.appendChild(current_desc);
+
+    
+    
+    forecast_row_1.appendChild(current_header);
+    forecast_row_2.appendChild(current_temp);
+    forecast_row_3.appendChild(current_humidity);
+    forecast_row_4.appendChild(current_conditions);
 
     }
   );
@@ -49,44 +72,65 @@ getWeather(forecastUrl).then(data => {
     // let clean_array = [];
     let raw_array = data.list;
     let max = 0;
-    let min = 0;
-    let forecast_row_1 = document.getElementById('forecast-row-1');
-    let forecast_row_2 = document.getElementById('forecast-row-2');
-    let forecast_row_3 = document.getElementById('forecast-row-3');
-    let forecast_row_4 = document.getElementById('forecast-row-4');
+    let min = 1000000000000000000000000000000000000000000000000000000;
+    
 
     raw_array.forEach(interval =>
         {
             //finds the highest of the temps for all the intervals over the next day
             if (interval.main.temp_max > max){
-                let max = interval.main.temp_max;
+                max = interval.main.temp_max;
+                
             }
-            if (interval.main.temp_min > min){
-                let min = interval.main.temp_min;
+            if (interval.main.temp_min < min) {
+                min = interval.main.temp_min;
+                
             }
             
             // pull all the data into variables
             let hour = interval.dt_txt.split(' ')[1]; //takes the datetime string providede by api and splists the date from the hour and selects only the hour
             let split_hour = hour.split(':');
-            let clean_hour = split_hour[0] + ':' + split_hour[1]
-            console.log(clean_hour);
+            let clean_hour = split_hour[0] + ':' + split_hour[1];
+            if ("15" == split_hour[0] || "12" == split_hour[0] || "18" == split_hour[0]) {
             let interval_temp = `${Math.round(interval.main.temp)} °C `;
             let interval_humidity = interval.main.humidity + "%";
-            let interval_desc = interval.weather[0].main;
-            let interval_icon = `https://openweathermap.org/img/wn/${interval.weather[0].icon}.png`;
-            //create the DOM elements
-
             let interval_hour = document.createElement('td');
             let interval_element_t =  document.createElement('td'); 
             let interval_element_h =  document.createElement('td'); 
-            let interval_element_d =  document.createElement('td'); 
-            let interval_element_i =  document.createElement('img');
+            let interval_element_d = document.createElement('td');
+            interval.weather.forEach(item =>{
+              let item_main = item.main;
+              let item_desc = item.description;
+              let item_icon = `https://openweathermap.org/img/wn/${item.icon}.png`;
+              
 
-            interval_hour.innerText = clean_hour;
+              let item_m =  document.createElement('p'); 
+              let item_i =  document.createElement('img'); 
+              let item_d =  document.createElement('p'); 
+
+              item_m.innerText = item_main;
+              item_d.innerText =item_desc;
+              item_i.setAttribute("src",item_icon);
+
+              interval_element_d.appendChild(item_m);
+              interval_element_d.appendChild(item_i);
+              interval_element_d.appendChild(item_d);
+              
+
+
+              
+        
+            });
+    
+            //create the DOM elements
+
+            
+            
+            
+
+            interval_hour.innerText = 'Tomorrow @'+ clean_hour;
             interval_element_t.innerText = interval_temp;
             interval_element_h.innerText = interval_humidity;
-            interval_element_d.innerText = interval_desc;
-            interval_element_i.setAttribute('src', interval_icon);
 
 
             forecast_row_1.appendChild(interval_hour);
@@ -94,54 +138,9 @@ getWeather(forecastUrl).then(data => {
             forecast_row_3.appendChild(interval_element_h);
             forecast_row_4.appendChild(interval_element_d);
             // .appendChild(interval_element_i);
-
-
-
-
-
-
-            
-
-        }
-    )
-
+            }
+        });
+        console.log(min);
+        console.log(`max is:${max}`);
     }
   );
-
-// async function checkWeather() {
-//     const apiUrl = 'http://api.openweathermap.org/data/3.0/triggers';
-
-//     const triggerData = {
-//         time_period: {
-//             start: { expression: 'after', amount: 132000000 },
-//             end: { expression: 'after', amount: 432000000 }
-//         },
-//         conditions: [
-//             { name: 'temp', expression: '$lt', amount: 32 },
-//             { name: 'wind_speed', expression: '$gt', amount: 35}
-//         ],
-//         area: [{ type: 'Point', coordinates: [53, 37] }]
-//     };
-
-//     try {
-//         // Create a trigger
-//         const response = await fetch(apiUrl, {
-//             method: 'POST',
-//             headers: { 'Content-Type': 'application/json' },
-//             body: JSON.stringify(triggerData)
-//         });
-
-//         const trigger = await response.json();
-
-//         // Check if the trigger has any alerts
-//         if (trigger.alerts && Object.keys(trigger.alerts).length > 0) {
-//             // Display the weather warning banner
-//             document.getElementById('weather-banner').style.display = 'block';
-//         }
-//     } catch (error) {
-//         console.error('Error checking weather:', error);
-//     }
-// }
-
-// // Check weather conditions when the page loads
-// window.addEventListener('load', checkWeather);
