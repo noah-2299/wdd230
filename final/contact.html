@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>~Scoots~ Rentals</title>
     <!-- Meta tags need filled out -->
-    <meta name="description" content="Discover the freedom of exploration with Sccots, your premier destination for local scooter and jeep rentals. Unleash the thrill of cruising through Cozumel in style, whether you prefer the nimble agility of a scooter or the rugged versatility of a jeep. At Sccots, we offer a fleet of well-maintained vehicles to suit every adventure, ensuring you experience the scenic beauty of the island on your own terms. Our hassle-free rental process, competitive rates, and convenient location make Sccots the go-to choice for locals and tourists alike. Fuel your wanderlust, embrace the open road, and create unforgettable memories with Sccots - where every ride is a journey worth taking!">
+    <meta name="description"
+        content="Discover the freedom of exploration with Sccots, your premier destination for local scooter and jeep rentals. Unleash the thrill of cruising through Cozumel in style, whether you prefer the nimble agility of a scooter or the rugged versatility of a jeep. At Sccots, we offer a fleet of well-maintained vehicles to suit every adventure, ensuring you experience the scenic beauty of the island on your own terms. Our hassle-free rental process, competitive rates, and convenient location make Sccots the go-to choice for locals and tourists alike. Fuel your wanderlust, embrace the open road, and create unforgettable memories with Sccots - where every ride is a journey worth taking!">
     <meta name="author" content="Noah Smith">
     <meta property="og:title" content="~Scoots~ Rentals">
     <meta property="og:type" content="website">
     <meta property="og:image" content="final\images\logo.svg">
     <meta property="og:url" content="https://noah-2299.github.io/wdd230/final/">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/large.css">
+
     <link rel="icon" href="images/logo.svg">
 </head>
 
@@ -21,53 +25,62 @@
     <header>
         <nav>
             <a href="index.html"><img src="images/logo.svg" width="80" height="80"></a>
+            <a href="index.html">Home</a>
             <a href="rentals.html">Rentals</a>
             <a href="reservations.html">Reservations</a>
             <a href="contact.html">Contact Us</a>
-            <a href="index.html"><img src="images/logo.svg" width="80" height="80"></a>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
         </nav>
     </header>
     <!-- ##############################main################################### -->
     <main>
         <section id="locations">
             <h2>Locations</h2>
-            <div class="location-card">
+            
                 <h3>
-                    <a href="contact.html">Playa del Carmen-Cozumel Ferry Dock Location</a>
+                   Playa del Carmen-Cozumel Ferry Dock Location
                 </h3>
-                <p>Welcome to our Playa del Carmen-Cozumel Ferry Dock location, conveniently situated in the heart of
-                    Cozumel. Nestled near the bustling ferry dock, this Scoots rental hub is the ideal starting point
-                    for locals, walk-in tourists, and motor scooter enthusiasts looking to explore the island with ease.
-                    Our central location ensures quick access to Cozumel's main attractions, vibrant streets, and scenic
-                    routes. Whether you're a seasoned rider or a first-time adventurer, Scoots Cozumel at Playa del
-                    Carmen-Cozumel Ferry Dock is your gateway to an unforgettable island experience. Discover the
-                    freedom of exploring Cozumel on two wheels from our prime location!</p>
-
-                    <p>
-                        C. 7 Sur 65, Centro, 77600 Cozumel, Q.R., Mexico
-                    </p>
-                <button><a href="reservations.html">Rent From this location!</a></button>
-
+                <p>
+                    Address: C. 7 Sur 65, Centro, 77600 Cozumel, Q.R., Mexico
+                </p>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2222.0276186393407!2d-86.95529407912723!3d20.506631342039253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59c54a719cf7%3A0xdc1982ef43be5ee5!2sC.%207%20Sur%2065%2C%20Centro%2C%2077600%20Cozumel%2C%20Q.R.%2C%20Mexico!5e0!3m2!1sen!2sus!4v1702317848453!5m2!1sen!2sus"
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="location-card">
-                <h3><a href="contact.html">Terminal Puerta Maya Location</a></h3>
+                    width="600" height="450"loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                    <p>
+                        Welcome to our Playa del Carmen-Cozumel Ferry Dock location, conveniently situated in the heart of
+                        Cozumel. Nestled near the bustling ferry dock, this Scoots rental hub is the ideal starting point
+                        for locals, walk-in tourists, and motor scooter enthusiasts looking to explore the island with ease.
+                        Our central location ensures quick access to Cozumel's main attractions, vibrant streets, and scenic
+                        routes. Whether you're a seasoned rider or a first-time adventurer, Scoots Cozumel at Playa del
+                        Carmen-Cozumel Ferry Dock is your gateway to an unforgettable island experience. Discover the
+                        freedom of exploring Cozumel on two wheels from our prime location!
+                    </p>
+    
+            
+            
+                <h3>Terminal Puerta Maya Location</h3>
+                <p>Address: #1300 local 3, sur, Zona Hotelera Nte., 77675 Cozumel, Q.R., Mexico</p>
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.7101922600664!2d-86.97529792475834!3d20.477092981037746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5748abf8e2b1%3A0xe8a0742adec5ec0c!2sMarymar%20Rentals!5e0!3m2!1sen!2sus!4v1702499233696!5m2!1sen!2sus"
+                width="600" height="450" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <p>Embark on your Cozumel adventure from our Terminal Puerta Maya location, strategically positioned to
                     cater to cruise-based touring groups and partnerships. Located south along the picturesque coast,
                     our Scoots rental spot at Terminal Puerta Maya offers a seamless experience for cruise patrons eager
                     to explore the island at their own pace. Cruise into Cozumel, hop on a scooter, and set off on an
                     exploration of the island's beauty and charm. With Scoots Cozumel, your island adventure begins
                     right at the cruise terminal!</p>
-                <button><a href="reservations.html">Rent From this location!</a></button>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.7101922600664!2d-86.97529792475834!3d20.477092981037746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5748abf8e2b1%3A0xe8a0742adec5ec0c!2sMarymar%20Rentals!5e0!3m2!1sen!2sus!4v1702499233696!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                
+                
 
-                <p>#1300 local 3, sur, Zona Hotelera Nte., 77675 Cozumel, Q.R., Mexico</p>
-            </div>
-        
-       
+
     </main>
     <!-- ##############################footer################################### -->
     <footer>
@@ -84,15 +97,15 @@
         </div>
         <div>
             <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2222.0276186393407!2d-86.95529407912723!3d20.506631342039253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59c54a719cf7%3A0xdc1982ef43be5ee5!2sC.%207%20Sur%2065%2C%20Centro%2C%2077600%20Cozumel%2C%20Q.R.%2C%20Mexico!5e0!3m2!1sen!2sus!4v1702317848453!5m2!1sen!2sus"
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2222.0276186393407!2d-86.95529407912723!3d20.506631342039253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59c54a719cf7%3A0xdc1982ef43be5ee5!2sC.%207%20Sur%2065%2C%20Centro%2C%2077600%20Cozumel%2C%20Q.R.%2C%20Mexico!5e0!3m2!1sen!2sus!4v1702317848453!5m2!1sen!2sus"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="attribution">
             <a href="attributions.html">Attributions</a>
         </div>
 
     </footer>
+    <script src="scripts/theme.js"></script>
 </body>
 
 </html>

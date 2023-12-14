@@ -14,6 +14,8 @@
     <meta property="og:image" content="final\images\logo.svg">
     <meta property="og:url" content="https://noah-2299.github.io/wdd230/final/">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="images/logo.svg">
 </head>
 
@@ -22,17 +24,23 @@
     <header>
         <nav>
             <a href="index.html"><img src="images/logo.svg" width="80" height="80"></a>
+            <a href="index.html">Home</a>
             <a href="rentals.html">Rentals</a>
             <a href="reservations.html">Reservations</a>
             <a href="contact.html">Contact Us</a>
-            <a href="index.html"><img src="images/logo.svg" width="80" height="80"></a>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
         </nav>
     </header>
     <!-- ##############################main################################### -->
     <main>
         <section>
-            <h2>rental agreement</h2>
-            <div>
+            <h2>Rental Agreement</h2>
+            <div id="rental-agreement">
                 <ul>
                     <li>A $50 security deposit is required to confirm reservations.</li>
                     <li>A valid drivers license is required in hand at the time of rental.</li>
@@ -48,17 +56,16 @@
             </div>
         </section>
         <section>
-            <h2>
-                Make Reservation
-            </h2>
             <form id="reservation" method="get" action="confirmation.html">
                 <fieldset>
                     <legend>
-                        Rental details
+                        <h2>
+                            Make Reservation
+                        </h2>
                     </legend>
-                    <label>*Start Date: <input type="date" name="start-date" id="start-date" required></label>
-                    <label>*End Date: <input type="date" name="end-date" id="end-date" required></label>
-                    <label>Rental Type *<select name="rental-type" id="rental-type" required>
+                    <label>* Start Date: <input type="date" name="start-date" id="start-date" required></label>
+                    <label>* End Date: <input type="date" name="end-date" id="end-date" required></label>
+                    <label>* Rental Type: <select name="rental-type" id="rental-type" required>
                             <option>Honda Metro Scooter</option>
                             <option>Honda Dio Scooter</option>
                             <option>Honda PCX150 Scooter</option>
@@ -67,21 +74,17 @@
                             <option>Jeep Wrangler - 2 door</option>
                         </select>
                     </label>
-                    <label>Quantity<input type="number" name="Quantity" id="Quantity" required pattern="[1-9]"></label>
-                </fieldset>
-                <fieldset>
-                    <legend>
-                        Booking details
-                    </legend>
-                    <label>Phone: <input type="tel" name="phone" id="phone" required>
+                    <label>* Quantity: <input type="number" name="Quantity" id="Quantity" required pattern="[1-9]"></label>
+            
+                    <label>* Phone: <input type="tel" name="phone" id="phone" required>
                     </label>
-                    <label>First Name: <input type="text" name="fname" id="fname" required>
+                    <label>* First Name: <input type="text" name="fname" id="fname" required>
 
                     </label>
-                    <label>Last Name: <input type="text" name="lname" id="lname" required>
+                    <label>* Last Name: <input type="text" name="lname" id="lname" required>
 
                     </label>
-                    <label>Email: <input type="email" name="email" id="email" required>
+                    <label>* Email: <input type="email" name="email" id="email" required>
 
                     </label>
                     <label>Home Country: <input type="text" name="homec" id="homec">
@@ -121,8 +124,7 @@
         </div>
 
     </footer>
-
-    <script src="scripts/rental.js"> </script>
+    <script src="scripts/theme.js"></script>
 </body>
 
 </html>
