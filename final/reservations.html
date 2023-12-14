@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>~Scoots~ Rentals</title>
     <!-- Meta tags need filled out -->
-    <meta name="description" content="Discover the freedom of exploration with Sccots, your premier destination for local scooter and jeep rentals. Unleash the thrill of cruising through Cozumel in style, whether you prefer the nimble agility of a scooter or the rugged versatility of a jeep. At Sccots, we offer a fleet of well-maintained vehicles to suit every adventure, ensuring you experience the scenic beauty of the island on your own terms. Our hassle-free rental process, competitive rates, and convenient location make Sccots the go-to choice for locals and tourists alike. Fuel your wanderlust, embrace the open road, and create unforgettable memories with Sccots - where every ride is a journey worth taking!">
+    <meta name="description"
+        content="Discover the freedom of exploration with Sccots, your premier destination for local scooter and jeep rentals. Unleash the thrill of cruising through Cozumel in style, whether you prefer the nimble agility of a scooter or the rugged versatility of a jeep. At Sccots, we offer a fleet of well-maintained vehicles to suit every adventure, ensuring you experience the scenic beauty of the island on your own terms. Our hassle-free rental process, competitive rates, and convenient location make Sccots the go-to choice for locals and tourists alike. Fuel your wanderlust, embrace the open road, and create unforgettable memories with Sccots - where every ride is a journey worth taking!">
     <meta name="author" content="Noah Smith">
     <meta property="og:title" content="~Scoots~ Rentals">
     <meta property="og:type" content="website">
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="icon" href="images/logo.svg">
 </head>
+
 <body>
     <!-- ##############################header################################### -->
     <header>
@@ -54,16 +56,16 @@
                     <legend>
                         Rental details
                     </legend>
-                    <label>Date *<input type="date" name="start-date" id="start-date" required></label>
-                    <label>Period *<input type="date" name="start-date" id="start-date" required></label>
+                    <label>*Start Date: <input type="date" name="start-date" id="start-date" required></label>
+                    <label>*End Date: <input type="date" name="end-date" id="end-date" required></label>
                     <label>Rental Type *<select name="rental-type" id="rental-type" required>
-                    <option>Honda Metro Scooter</option>
-                    <option>Honda Dio Scooter</option>
-                    <option>Honda PCX150 Scooter</option>
-                    <option>Honda Pioneer ATV</option>
-                    <option>Jeep Wrangler - 4 door with a/c</option>
-                    <option>Jeep Wrangler - 2 door</option>
-                    </select>
+                            <option>Honda Metro Scooter</option>
+                            <option>Honda Dio Scooter</option>
+                            <option>Honda PCX150 Scooter</option>
+                            <option>Honda Pioneer ATV</option>
+                            <option>Jeep Wrangler - 4 door with a/c</option>
+                            <option>Jeep Wrangler - 2 door</option>
+                        </select>
                     </label>
                     <label>Quantity<input type="number" name="Quantity" id="Quantity" required pattern="[1-9]"></label>
                 </fieldset>
@@ -71,28 +73,56 @@
                     <legend>
                         Booking details
                     </legend>
-                    <label>Phone: <input type="tel" name="phone" id = "phone" required>
+                    <label>Phone: <input type="tel" name="phone" id="phone" required>
+                    </label>
+                    <label>First Name: <input type="text" name="fname" id="fname" required>
+
+                    </label>
+                    <label>Last Name: <input type="text" name="lname" id="lname" required>
+
+                    </label>
+                    <label>Email: <input type="email" name="email" id="email" required>
+
+                    </label>
+                    <label>Home Country: <input type="text" name="homec" id="homec">
+
+                    </label>
+                    <label>Cruise Line(if applicable): <input type="text" name="cruise" id="cruise">
+        
+                    </label>
+                    <label>Special Requests: <textarea></textarea>
+
                     </label>
                 </fieldset>
+                <button type="submit">Confirm Reservation</button>
             </form>
         </section>
     </main>
     <!-- ##############################footer################################### -->
     <footer>
         <div class="social-media">
-        <a><img></a>
-        <a><img></a>
-        <a><img></a>
+            <h3></h3>
+            <a href="//facebook.com" target="_blank"><img src="images/fb_icon.svg" width="50"></a>
+            <a href="//instagram.com" target="_blank"><img src="images/insta.svg" width="50"></a>
+            <a href="//youtube.com" target="_blank"></a><img src="images/yt_icon.svg" width="50"></a>
         </div>
         <div class="contact-info">
+            <p> P: (555) 555-555</p>
+            <p> E: info@scoots.com</p>
+            <p> Main Address: C. 7 Sur 65, Centro, 77600 Cozumel, Q.R., Mexico</p>
+        </div>
+        <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2222.0276186393407!2d-86.95529407912723!3d20.506631342039253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59c54a719cf7%3A0xdc1982ef43be5ee5!2sC.%207%20Sur%2065%2C%20Centro%2C%2077600%20Cozumel%2C%20Q.R.%2C%20Mexico!5e0!3m2!1sen!2sus!4v1702317848453!5m2!1sen!2sus"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="attribution">
-            <a href="attributions.html"></a>
+            <a href="attributions.html">Attributions</a>
         </div>
-        
+
     </footer>
 
-    <script src="scripts/rental.js" > </script>
+    <script src="scripts/rental.js"> </script>
 </body>
 
 </html>

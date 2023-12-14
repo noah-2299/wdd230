@@ -1,0 +1,13 @@
+
+1. Home page images >|||<
+2. Finish footer and copy everywhere
+3. Style tables 
+4. build mobile css
+5.Build form
+6. style form
+7. Clean up contact html
+8. style contact
+9. Review file names and structure
+10. Review Validation
+11. Make fixes.
+12.review validation
