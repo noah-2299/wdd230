@@ -1,7 +1,6 @@
 :root {
 
     /* Lighter color pallete rgb values use rgb or rgba around variables*/
-    ---tangerine: 233, 136, 39;
     --eggshell: 241, 234, 215;
     --cambridge-blue: 0, 167, 245;
     --khaki: 191, 183, 160;
@@ -19,11 +18,7 @@
     --font-color: rgb(var(--sea-green));
     --deep-font: rgb(var(--syracuse-red-orange));
 
-
-
 }
-
-
 
 /* dark mode colors*/
 [data-theme="dark"] {
@@ -242,7 +237,7 @@ form{
 form button{
     width: 30%;
     margin: 1rem auto;
-    height: 2rem;
+    height: 3rem;
     background-color: var(--highlight-color);
 }
 form legend{
@@ -257,9 +252,7 @@ input,select,textarea{
     height: 2rem;
     
 }
-input{
-    
-}
+
 #rental-agreement li{
     font-size: 1.5rem;
     padding: .2rem;
